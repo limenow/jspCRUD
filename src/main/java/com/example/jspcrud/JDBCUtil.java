@@ -1,14 +1,14 @@
-package com.crud.common;
+package com.example.jspcrud;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
 
-public class JDBCUtil2 {
+public class JDBCUtil {
 	public static Connection getConnection(){  
 	    Connection con=null;  
 	    try{  
-	        Class.forName("com.mysql.jdbc.Driver");  
-	        con= DriverManager.getConnection("jdbc:mysql://db4free.net:3306/dbname","dbid","idpwd");  
+	        Class.forName("org.mariadb.jdbc.Driver");
+	        con= DriverManager.getConnection("jdbc:mariadb://walab.handong.edu:3306/p233_22200630","p233_22200630","Rohth6");
 	    }catch(Exception e){
 	    	System.out.println(e);
 	    }  

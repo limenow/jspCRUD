@@ -1,4 +1,4 @@
-package com.crud.bean;
+package com.example.jspcrud;
 
 import java.util.Date;
 
@@ -7,6 +7,8 @@ public class BoardVO {
 	private String title;
 	private String writer;
 	private String content;
+	private String category;
+	private Date moddate;
 	private Date regdate;
 	private int cnt;
 	
@@ -34,6 +36,14 @@ public class BoardVO {
 	public void setContent(String content) {
 		this.content = content;
 	}
+	public String getCategory() {
+		return category;
+	}
+	public void setCategory(String category) {
+		this.category = category;
+	}
+	public Date getModdate() {return moddate;}
+	public void setModdate(Date moddate) {this.moddate = moddate;}
 	public Date getRegdate() {
 		return regdate;
 	}
